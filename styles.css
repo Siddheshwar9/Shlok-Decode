@@ -115,6 +115,38 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+#submit-poem, #user-submissions {
+    background: #fdf6e3;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #d9c7a7;
+    text-align: center;
+}
+
+#submit-poem input, #submit-poem textarea {
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #7b5e3c;
+    border-radius: 8px;
+}
+
+#submit-poem button {
+    background-color: #7b5e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit-poem button:hover {
+    background-color: #a67c52;
+}
+
 
 /* RESPONSIVENESS */
 @media (max-width: 768px) {

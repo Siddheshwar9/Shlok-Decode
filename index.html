@@ -36,7 +36,8 @@
             <h2>📜 More Shlokas</h2>
             <div class="shloka-grid">
                 <div class="shloka-item">
-                    <p class="shloka">"न च प्राण संज्ञो न व पञ्चवाय: ..."</p>
+                    <p class="shloka">".न च प्राण संज्ञो न व पञ्चवाय: न वा सप्तधातनर वा पञ्चकोश: 
+                        न वािक्पाणपादौ न चोपस्थपाय ि◌चदानन्द रूप:ि◌शवोऽहम ि◌शवोऽहम ॥"</p>
                     <button class="show-translation-btn">🔍 Show Translation</button>
                     <p class="translation hidden">यह श्लोक बताता ह क म न तो प्राण (जीवन शिक्त) ह, न ही शरीर म बहन वाली पाँच प्रकार की वाय। न म शरीर 
                         क सात मल तत्वों (धातओ) स बना ह और न ही पाँच आवरणों (पचकोश) स घरा ह। न म वाणी (बोलन की 
@@ -45,7 +46,9 @@
                 </div>
 
                 <div class="shloka-item">
-                    <p class="shloka">" सग्रहकस्य यन्त्र, वतमानस्य गत..."</p>
+                    <p class="shloka">"सग्रहकस्य यन्त्र, 
+                        वतमानस्य गत, 
+                        आधारस्य शल्प "</p>
                     <button class="show-translation-btn">🔍 Show Translation</button>
                     <p class="translation hidden"> "सग्रहकता की मशीन, 
                         वतमान का पथ, 
@@ -55,9 +58,23 @@
             </div>
         </section>
     </div>
-
+    <section id="submit-poem">
+        <h2>📝 Add Your Own Shloka or Poem</h2>
+        <form id="poemForm">
+            <input type="text" id="poemTitle" placeholder="Title" required><br><br>
+            <textarea id="poemContent" rows="5" placeholder="Write your poem or shloka here..." required></textarea><br><br>
+            <input type="text" id="poetName" placeholder="Your Name (optional)"><br><br>
+            <button type="submit">➕ Submit</button>
+        </form>
+    </section>
+    
+    <section id="user-submissions">
+        <h2>🌟 Community Submissions</h2>
+        <div id="poemList" class="shloka-grid"></div>
+    </section>
+    
     <footer>
-        <p>🕉 &copy; 2025 Ancient Hindu Scriptures | Hackathon Project 🕉</p>
+        <p>🕉 &copy; 2025 Kavyapath - A Digital Poetry Platform | Shlok Decode 🕉</p>
     </footer>
 
     <script src="script.js"></script>
