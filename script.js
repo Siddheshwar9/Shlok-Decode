@@ -1,19 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.show-translation-btn');
+document.addEventListener("DOMContentLoaded", function () {
+    // Navbar Toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            const translation = this.nextElementSibling;
-            const translationText = this.getAttribute('data-translation');
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
 
-            if (translation.style.display === 'block') {
-                translation.style.display = 'none';
-                this.textContent = '🔍 Show Translation';
-            } else {
-                translation.textContent = translationText;
-                translation.style.display = 'block';
-                this.textContent = '🚫 Hide Translation';
-            }
+    // Translation Toggle
+    document.querySelectorAll(".show-translation-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            let translation = this.nextElementSibling;
+            translation.classList.toggle("hidden");
         });
     });
 });
