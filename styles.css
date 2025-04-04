@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    font-family: 'Garamond', serif;
+    background: linear-gradient(135deg, #f3e3d3, #d9c7a7);
+    margin: 0;
+    padding: 0;
+    color: #4b3b2b;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid #bfae91;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #a67c52;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fffaf0;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d9c7a7;
+    margin-top: 10px;
+}
+
+/* Shloka Section */
+#shloka-section, #shloka-list {
+    background: #fdf6e3;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #d9c7a7;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#shloka-section h2, #shloka-list h2 {
+    font-size: 2rem;
+    color: #7b5e3c;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.shloka {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3b2f2f;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px #d9c7a7;
+}
+
+/* Button Styles */
+.show-translation-btn {
+    background-color: #7b5e3c;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.show-translation-btn:hover {
+    background-color: #a67c52;
+    transform: scale(1.05);
+}
+
+/* Translation Text */
+.translation {
+    display: none;
+    font-size: 1.2rem;
+    color: #4b3b2b;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f3e6;
+    border-radius: 8px;
+    border: 1px solid #d9c7a7;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #7b5e3c;
+    color: #fffaf0;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: inset 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .show-translation-btn {
+        padding: 10px 20px;
+    }
+}
